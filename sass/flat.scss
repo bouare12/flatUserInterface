@@ -137,7 +137,7 @@
 		list-style-type: none;
 		background-color: #FF1493;
 
-		li{
+		.menuP{
 			display: inline-block;
 			margin: 0px;
 			padding: 0px;
@@ -151,6 +151,10 @@
 
 		li:hover{
 			background-color: white;
+		}
+
+		.soumenu{
+			display: inline-block;
 		}
 	}
 }

@@ -129,7 +129,7 @@
   background-color: #FF1493;
 }
 /* line 140, ../sass/flat.scss */
-.menu ul li {
+.menu ul .menuP {
   display: inline-block;
   margin: 0px;
   padding: 0px;
@@ -137,65 +137,69 @@
   line-height: 40px;
 }
 /* line 147, ../sass/flat.scss */
-.menu ul li a {
+.menu ul .menuP a {
   text-decoration: none;
 }
 /* line 152, ../sass/flat.scss */
 .menu ul li:hover {
   background-color: white;
 }
+/* line 156, ../sass/flat.scss */
+.menu ul .soumenu {
+  display: inline-block;
+}
 
-/* line 158, ../sass/flat.scss */
+/* line 162, ../sass/flat.scss */
 .meteo {
   margin-top: 40px;
   background-image: url("../img/44.jpg");
   height: 250px;
 }
-/* line 163, ../sass/flat.scss */
+/* line 167, ../sass/flat.scss */
 .meteo .affs {
   text-align: center;
   color: white;
 }
-/* line 167, ../sass/flat.scss */
+/* line 171, ../sass/flat.scss */
 .meteo .affs time {
   font-size: 20px;
 }
-/* line 171, ../sass/flat.scss */
+/* line 175, ../sass/flat.scss */
 .meteo .affs h5 {
   margin: 0px;
   padding: 0px;
   font-size: 90px;
 }
-/* line 177, ../sass/flat.scss */
+/* line 181, ../sass/flat.scss */
 .meteo .affs .emoti {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
-/* line 182, ../sass/flat.scss */
+/* line 186, ../sass/flat.scss */
 .meteo .affs .emoti li {
   display: inline-block;
   float: center;
 }
-/* line 186, ../sass/flat.scss */
+/* line 190, ../sass/flat.scss */
 .meteo .affs .emoti li a {
   font-size: 15px;
   padding: 8px 0 8px 16px;
 }
-/* line 191, ../sass/flat.scss */
+/* line 195, ../sass/flat.scss */
 .meteo .affs .emoti li .icon-news::before {
   content: "\e600";
 }
-/* line 192, ../sass/flat.scss */
+/* line 196, ../sass/flat.scss */
 .meteo .affs .emoti li .icon-home::before {
   content: "\e601";
 }
-/* line 193, ../sass/flat.scss */
+/* line 197, ../sass/flat.scss */
 .meteo .affs .emoti li .icon-mail::before {
   content: "\e900";
 }
 
-/* line 199, ../sass/flat.scss */
+/* line 203, ../sass/flat.scss */
 .slideThree {
   width: 80px;
   height: 26px;
@@ -205,7 +209,7 @@
   border-radius: 50px;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
-/* line 208, ../sass/flat.scss */
+/* line 212, ../sass/flat.scss */
 .slideThree:after {
   content: 'OFF';
   color: #000;
@@ -216,7 +220,7 @@
   font-weight: bold;
   text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
 }
-/* line 218, ../sass/flat.scss */
+/* line 222, ../sass/flat.scss */
 .slideThree:before {
   content: 'ON';
   color: blue;
@@ -226,7 +230,7 @@
   font: 12px/26px Arial, sans-serif;
   font-weight: bold;
 }
-/* line 227, ../sass/flat.scss */
+/* line 231, ../sass/flat.scss */
 .slideThree label {
   display: block;
   width: 34px;
@@ -242,11 +246,11 @@
   transition: all 0.4s ease;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 243, ../sass/flat.scss */
+/* line 247, ../sass/flat.scss */
 .slideThree input[type=checkbox] {
   visibility: hidden;
 }
-/* line 245, ../sass/flat.scss */
+/* line 249, ../sass/flat.scss */
 .slideThree input[type=checkbox]:checked + label {
   left: 43px;
 }
