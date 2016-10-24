@@ -146,7 +146,7 @@
 }
 /* line 156, ../sass/flat.scss */
 .menu ul .soumenu {
-  display: inline-block;
+  background: white;
 }
 
 /* line 162, ../sass/flat.scss */
@@ -253,4 +253,153 @@
 /* line 249, ../sass/flat.scss */
 .slideThree input[type=checkbox]:checked + label {
   left: 43px;
+}
+
+/* line 255, ../sass/flat.scss */
+.squaredFour {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+}
+/* line 260, ../sass/flat.scss */
+.squaredFour label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fcfff4;
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+/* line 272, ../sass/flat.scss */
+.squaredFour label:after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+/* line 287, ../sass/flat.scss */
+.squaredFour label:hover::after {
+  opacity: 0.5;
+}
+/* line 292, ../sass/flat.scss */
+.squaredFour input[type=checkbox] {
+  visibility: hidden;
+}
+/* line 294, ../sass/flat.scss */
+.squaredFour input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+/* line 300, ../sass/flat.scss */
+.rating {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+/* line 304, ../sass/flat.scss */
+.rating a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 3em;
+  transition: color .4s;
+}
+/* line 312, ../sass/flat.scss */
+.rating a:hover {
+  color: orange;
+  cursor: pointer;
+}
+/* line 316, ../sass/flat.scss */
+.rating a:focus {
+  color: orange;
+  cursor: pointer;
+}
+/* line 320, ../sass/flat.scss */
+.rating a:hover ~ a {
+  color: orange;
+  cursor: pointer;
+}
+/* line 324, ../sass/flat.scss */
+.rating a:focus ~ a {
+  color: orange;
+  cursor: pointer;
+}
+
+/* line 330, ../sass/flat.scss */
+.imagefont {
+  position: relative;
+}
+/* line 334, ../sass/flat.scss */
+.imagefont .module-first {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: pink;
+  border: 1px solid black;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+}
+/* line 344, ../sass/flat.scss */
+.imagefont .module-first img {
+  position: relative;
+  margin: 20px 0  0 20px;
+}
+
+/* line 351, ../sass/flat.scss */
+.profiltop {
+  position: absolute;
+  margin-top: 60px;
+}
+/* line 354, ../sass/flat.scss */
+.profiltop .module-first {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: pink;
+  border: 1px solid black;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  float: left;
+}
+/* line 365, ../sass/flat.scss */
+.profiltop .module-first img {
+  position: relative;
+  margin: 20px 0  0 20px;
+}
+/* line 371, ../sass/flat.scss */
+.profiltop .cont {
+  float: left;
+  margin-left: 30px;
+}
+/* line 375, ../sass/flat.scss */
+.profiltop .cont h3 {
+  float: left;
+}
+/* line 379, ../sass/flat.scss */
+.profiltop .cont .follow {
+  float: left;
+  margin-top: 20px;
+  font-size: 15px;
+}
+/* line 385, ../sass/flat.scss */
+.profiltop .cont h6 {
+  float: left;
+}
+/* line 391, ../sass/flat.scss */
+.profiltop .cont .lienfooter li {
+  display: inline-block;
 }
