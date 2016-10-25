@@ -403,3 +403,111 @@
 .profiltop .cont .lienfooter li {
   display: inline-block;
 }
+
+/* line 403, ../sass/flat.scss */
+section {
+  margin-top: 20%;
+}
+
+/* line 407, ../sass/flat.scss */
+.pieID {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 411, ../sass/flat.scss */
+.pie {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: 0 30px 30px 0;
+}
+
+/* line 417, ../sass/flat.scss */
+.pie::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  background: #EEE;
+  border-radius: 50%;
+  top: 50px;
+  left: 50px;
+}
+
+/* line 429, ../sass/flat.scss */
+.pie::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1);
+  margin: 220px auto;
+}
+
+/* line 440, ../sass/flat.scss */
+.slice {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  clip: rect(0px, 200px, 200px, 100px);
+  animation: bake-pie 1s;
+}
+
+/* line 447, ../sass/flat.scss */
+.slice span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+}
+
+/* line 458, ../sass/flat.scss */
+.legend {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  padding: 15px;
+  font-size: 13px;
+  box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;
+}
+
+/* line 468, ../sass/flat.scss */
+.legend li {
+  width: 110px;
+  height: 1.25em;
+  margin-bottom: 0.7em;
+  padding-left: 0.5em;
+  border-left: 1.25em solid black;
+}
+
+/* line 475, ../sass/flat.scss */
+.legend em {
+  font-style: normal;
+}
+
+/* line 478, ../sass/flat.scss */
+.legend span {
+  float: right;
+}
+
+/* line 481, ../sass/flat.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 13px;
+  background: #DDD;
+  padding: 5px 10px;
+  margin: 5px;
+}
