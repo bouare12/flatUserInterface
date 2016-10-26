@@ -511,3 +511,14 @@ footer {
   padding: 5px 10px;
   margin: 5px;
 }
+
+/* line 493, ../sass/flat.scss */
+.sleader4 .firstImg {
+  background-image: url("../img/1.svg");
+  height: 150px;
+  text-align: center;
+}
+/* line 498, ../sass/flat.scss */
+.sleader4 .firstImg .btn1 {
+  margin-top: 3%;
+}
