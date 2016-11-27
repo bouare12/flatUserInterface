@@ -402,93 +402,94 @@
 
 section {
 
-  margin-top: 20%;
+	margin-top: 20%;
 }
 .pieID {
-  display: inline-block;
-  vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 }
 .pie {
-  height: 200px;
-  width: 200px;
-  position: relative;
-  margin: 0 30px 30px 0;
+	height: 200px;
+	width: 200px;
+	position: relative;
+	margin: 0 30px 30px 0;
 }
 .pie::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  background: #EEE;
-  border-radius: 50%;
-  top: 50px;
-  left: 50px;
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 100px;
+	height: 100px;
+	background: #EEE;
+	border-radius: 50%;
+	top: 50px;
+	left: 50px;
 }
 .pie::after {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 2px;
-  background: rgba(0,0,0,0.1);
-  border-radius: 50%;
-  box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
-  margin: 220px auto;
-  
+	content: "";
+	display: block;
+	width: 120px;
+	height: 2px;
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
+	margin: 220px auto;
+
 }
 .slice {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  clip: rect(0px, 200px, 200px, 100px);
-  animation: bake-pie 1s;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	clip: rect(0px, 200px, 200px, 100px);
+	animation: bake-pie 1s;
 }
 .slice span {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: black;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  clip: rect(0px, 200px, 200px, 100px);
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	clip: rect(0px, 200px, 200px, 100px);
 }
 .legend {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background: #FFF;
-  padding: 15px;
-  font-size: 13px;
-  box-shadow: 1px 1px 0 #DDD,
-              2px 2px 0 #BBB;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	padding: 15px;
+	font-size: 13px;
+	box-shadow: 1px 1px 0 #DDD,
+	2px 2px 0 #BBB;
 }
 .legend li {
-  width: 110px;
-  height: 1.25em;
-  margin-bottom: 0.7em;
-  padding-left: 0.5em;
-  border-left: 1.25em solid black;
+	width: 110px;
+	height: 1.25em;
+	margin-bottom: 0.7em;
+	padding-left: 0.5em;
+	border-left: 1.25em solid black;
 }
 .legend em {
-  font-style: normal;
+	font-style: normal;
 }
 .legend span {
-  float: right;
+	float: right;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  font-size: 13px;
-  background: #DDD;
-  padding: 5px 10px;
-  margin: 5px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-size: 13px;
+	background: #DDD;
+	padding: 5px 10px;
+	margin: 5px;
 }
 
 .sleader4{
+	margin-bottom: 40px;
 
 	.firstImg{
 		background-image: url('../img/1.svg');
@@ -502,6 +503,115 @@ footer {
 	}
 }
 
+.dockbar{
+	margin-bottom: 30px;
+	width: 100%;
+	height-min: 300px;
+	background: #8A2BE2;
+
+	.dockbar-rigth{
+		float: right;
+		margin-top: -10px;
+
+		.nav.clk{
+			display: inline-block;
+			float: right;
+			width: 45px;
+			height: 45px;
+			background: url('../img/burger.png') 10px 15px no-repeat;
+			content: "";
+			cursor: pointer;
+			//top: -7px;
+		}
+		.list{
+			display: inline-block;
+
+			ul{
+				display: inline-block;
+				margin-right: 20px;
+				list-style-type: none;
+
+				li{
+					float: left;
+					margin-left: 15px;
+
+					a{
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+			
+		}	
+	}
+
+	.logo-icon{
+		overflow : hidden;
+		width: 100px;
+		height: 30px;
+		img{
+			height: 60px;
+			border: 0px;
+		}
+	}
+}
+
+
+.navigation {
+	list-style: none;
+	background: #8A2BE2;
+	color: #fff;
+	width: 200px;
+	font: 1.2em "Trebuchet MS", sans-serif;
+	
+	li{
+
+		a{
+			text-decoration: underline;
+			display: block;
+			padding: 4px 10px;
+			color: #fff;
+			text-decoration: none;
+			background: #8A2BE2 url(menu-item.png) left bottom no-repeat;
+		}
+	}
+
+	.toggleSubMenu{
+
+		li{
+
+			a{
+				background-image: url(menu-item-deroule.png);
+			}
+
+			span{
+				display: block;
+				padding: 4px 10px;
+				color: #fff;
+				text-decoration: none;
+				background: #000 url(menu-item.png) left bottom no-repeat;
+				background-image: url(menu-item-deroule.png);
+
+				.subMenu{
+					font-size: .8em;
+					background: #8A2BE2 url(subMenu.png) 0 0 repeat-x;
+					font-size: .9em;
+					margin: 0;
+					padding: 0;
+					border-bottom: 1px solid #666;
+					li{
+
+						a{
+							background: none;
+							padding: 3px 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
 
 
 

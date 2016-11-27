@@ -512,13 +512,116 @@ footer {
   margin: 5px;
 }
 
-/* line 493, ../sass/flat.scss */
+/* line 491, ../sass/flat.scss */
+.sleader4 {
+  margin-bottom: 40px;
+}
+/* line 494, ../sass/flat.scss */
 .sleader4 .firstImg {
   background-image: url("../img/1.svg");
   height: 150px;
   text-align: center;
 }
-/* line 498, ../sass/flat.scss */
+/* line 499, ../sass/flat.scss */
 .sleader4 .firstImg .btn1 {
   margin-top: 3%;
+}
+
+/* line 506, ../sass/flat.scss */
+.dockbar {
+  margin-bottom: 30px;
+  width: 100%;
+  height-min: 300px;
+  background: #8A2BE2;
+}
+/* line 512, ../sass/flat.scss */
+.dockbar .dockbar-rigth {
+  float: right;
+  margin-top: -10px;
+}
+/* line 516, ../sass/flat.scss */
+.dockbar .dockbar-rigth .nav.clk {
+  display: inline-block;
+  float: right;
+  width: 45px;
+  height: 45px;
+  background: url("../img/burger.png") 10px 15px no-repeat;
+  content: "";
+  cursor: pointer;
+}
+/* line 526, ../sass/flat.scss */
+.dockbar .dockbar-rigth .list {
+  display: inline-block;
+}
+/* line 529, ../sass/flat.scss */
+.dockbar .dockbar-rigth .list ul {
+  display: inline-block;
+  margin-right: 20px;
+  list-style-type: none;
+}
+/* line 534, ../sass/flat.scss */
+.dockbar .dockbar-rigth .list ul li {
+  float: left;
+  margin-left: 15px;
+}
+/* line 538, ../sass/flat.scss */
+.dockbar .dockbar-rigth .list ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 548, ../sass/flat.scss */
+.dockbar .logo-icon {
+  overflow: hidden;
+  width: 100px;
+  height: 30px;
+}
+/* line 552, ../sass/flat.scss */
+.dockbar .logo-icon img {
+  height: 60px;
+  border: 0px;
+}
+
+/* line 560, ../sass/flat.scss */
+.navigation {
+  list-style: none;
+  background: #8A2BE2;
+  color: #fff;
+  width: 200px;
+  font: 1.2em "Trebuchet MS", sans-serif;
+}
+/* line 569, ../sass/flat.scss */
+.navigation li a {
+  text-decoration: underline;
+  display: block;
+  padding: 4px 10px;
+  color: #fff;
+  text-decoration: none;
+  background: #8A2BE2 url(menu-item.png) left bottom no-repeat;
+}
+/* line 583, ../sass/flat.scss */
+.navigation .toggleSubMenu li a {
+  background-image: url(menu-item-deroule.png);
+}
+/* line 587, ../sass/flat.scss */
+.navigation .toggleSubMenu li span {
+  display: block;
+  padding: 4px 10px;
+  color: #fff;
+  text-decoration: none;
+  background: #000 url(menu-item.png) left bottom no-repeat;
+  background-image: url(menu-item-deroule.png);
+}
+/* line 595, ../sass/flat.scss */
+.navigation .toggleSubMenu li span .subMenu {
+  font-size: .8em;
+  background: #8A2BE2 url(subMenu.png) 0 0 repeat-x;
+  font-size: .9em;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #666;
+}
+/* line 604, ../sass/flat.scss */
+.navigation .toggleSubMenu li span .subMenu li a {
+  background: none;
+  padding: 3px 20px;
 }
